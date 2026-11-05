@@ -125,7 +125,7 @@ mavenPublishing {
         }
         developers {
             developer {
-                id.set("devdasx")
+                id.set("OathWallet")
                 name.set("ROYO STUDIOS")
                 email.set("royostudios13@gmail.com")
             }

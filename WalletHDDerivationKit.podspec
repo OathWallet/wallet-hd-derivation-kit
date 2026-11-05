@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/OathWallet/wallet-hd-derivation-kit.git", :tag => "v#{spec.version}" }
   spec.license = { :type => "MIT", :file => "LICENSE" }
   spec.author = { "ROYO STUDIOS" => "royostudios13@gmail.com" }
-  spec.social_media_url = "https://github.com/devdasx"
+  spec.social_media_url = "https://github.com/OathWallet"
   spec.swift_version = "6.0"
   # The secp256k1 pod ships a statically linked XCFramework. Declaring this
   # pod as a static framework makes that linkage explicit for CocoaPods.

@@ -4,7 +4,7 @@
     {
       "identity" : "bip39-mnemonic-kit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/devdasx/bip39-mnemonic-kit.git",
+      "location" : "https://github.com/OathWallet/bip39-mnemonic-kit.git",
       "state" : {
         "revision" : "24d942634d1a356b811db73a2a9ff8cb359c2867",
         "version" : "2.0.1"
