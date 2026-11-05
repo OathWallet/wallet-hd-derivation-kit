@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devdasx/wallet-hd-derivation-kit.git"
+    "url": "git+https://github.com/OathWallet/wallet-hd-derivation-kit.git"
   },
-  "homepage": "https://devdasx.github.io/wallet-hd-derivation-kit/",
-  "bugs": "https://github.com/devdasx/wallet-hd-derivation-kit/issues",
+  "homepage": "https://oathwallet.github.io/wallet-hd-derivation-kit/",
+  "bugs": "https://github.com/OathWallet/wallet-hd-derivation-kit/issues",
   "keywords": [
     "hd-wallet",
     "bip32",

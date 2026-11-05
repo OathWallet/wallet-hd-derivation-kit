@@ -10,7 +10,7 @@ permalink: /
 One behavioral specification, seven native implementations, 18 verified chains, and zero runtime network calls.
 
 ```sh
-brew install devdasx/crypto-kits/wallethd
+brew install OathWallet/crypto-kits/wallethd
 wallethd address --chain bitcoin --prompt --pretty
 ```
 

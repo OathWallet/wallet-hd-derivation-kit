@@ -1,9 +1,9 @@
 class Wallethd < Formula
   desc "Offline multi-chain HD wallet derivation CLI"
-  homepage "https://devdasx.github.io/wallet-hd-derivation-kit/cli/"
-  url "https://github.com/devdasx/wallet-hd-derivation-kit/archive/refs/tags/v1.0.0.tar.gz"
+  homepage "https://oathwallet.github.io/wallet-hd-derivation-kit/cli/"
+  url "https://github.com/OathWallet/wallet-hd-derivation-kit/archive/refs/tags/v1.0.0.tar.gz"
   license "MIT"
-  head "https://github.com/devdasx/wallet-hd-derivation-kit.git", branch: "main"
+  head "https://github.com/OathWallet/wallet-hd-derivation-kit.git", branch: "main"
 
   depends_on "rust" => :build
 

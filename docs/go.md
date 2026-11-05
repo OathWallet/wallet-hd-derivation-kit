@@ -18,4 +18,4 @@ if err != nil { log.Fatal(err) }
 fmt.Println(result.Address)
 ```
 
-The module is discoverable through pkg.go.dev after the public tag is fetched. [Runnable example](https://github.com/devdasx/wallet-hd-derivation-kit/tree/main/examples/go).
+The module is discoverable through pkg.go.dev after the public tag is fetched. [Runnable example](https://github.com/OathWallet/wallet-hd-derivation-kit/tree/main/examples/go).

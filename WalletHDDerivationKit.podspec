@@ -7,8 +7,8 @@ Pod::Spec.new do |spec|
     Bitcoin, EVM, TRON, Solana, Litecoin, Dogecoin, Dash, DigiByte, BCH,
     and Zcash transparent address derivation. No runtime network calls.
   DESC
-  spec.homepage = "https://devdasx.github.io/wallet-hd-derivation-kit/swift/"
-  spec.source = { :git => "https://github.com/devdasx/wallet-hd-derivation-kit.git", :tag => "v#{spec.version}" }
+  spec.homepage = "https://oathwallet.github.io/wallet-hd-derivation-kit/swift/"
+  spec.source = { :git => "https://github.com/OathWallet/wallet-hd-derivation-kit.git", :tag => "v#{spec.version}" }
   spec.license = { :type => "MIT", :file => "LICENSE" }
   spec.author = { "ROYO STUDIOS" => "royostudios13@gmail.com" }
   spec.social_media_url = "https://github.com/devdasx"

@@ -114,7 +114,7 @@ mavenPublishing {
     pom {
         name.set("Wallet HD Derivation Kit")
         description.set("Offline multi-chain HD wallet derivation for Kotlin, JVM, and Android")
-        url.set("https://github.com/devdasx/wallet-hd-derivation-kit")
+        url.set("https://github.com/OathWallet/wallet-hd-derivation-kit")
         inceptionYear.set("2026")
         licenses {
             license {
@@ -133,7 +133,7 @@ mavenPublishing {
         scm {
             connection.set("scm:git:git://github.com/devdasx/wallet-hd-derivation-kit.git")
             developerConnection.set("scm:git:ssh://github.com/devdasx/wallet-hd-derivation-kit.git")
-            url.set("https://github.com/devdasx/wallet-hd-derivation-kit")
+            url.set("https://github.com/OathWallet/wallet-hd-derivation-kit")
         }
     }
 }

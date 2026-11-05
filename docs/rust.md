@@ -18,4 +18,4 @@ let result = derive_address(&source, DeriveOptions { chain: "bitcoin", ..Default
 println!("{}", result.address);
 ```
 
-The same crate provides the `wallethd` binary. `Source` validation and bounded batch APIs return typed errors. [Runnable example](https://github.com/devdasx/wallet-hd-derivation-kit/tree/main/examples/rust).
+The same crate provides the `wallethd` binary. `Source` validation and bounded batch APIs return typed errors. [Runnable example](https://github.com/OathWallet/wallet-hd-derivation-kit/tree/main/examples/rust).

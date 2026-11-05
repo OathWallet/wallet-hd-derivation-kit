@@ -16,7 +16,7 @@ if ($Uninstall) {
 }
 if (-not [Environment]::Is64BitOperatingSystem) { throw "Windows x86-64 is required" }
 $artifact = "wallethd-v$Version-windows-x86_64.zip"
-$release = "https://github.com/devdasx/wallet-hd-derivation-kit/releases/download/v$Version"
+$release = "https://github.com/OathWallet/wallet-hd-derivation-kit/releases/download/v$Version"
 if ($DryRun) { Write-Host "Would download $release/$artifact and install to $destination"; exit 0 }
 if ((Test-Path $destination) -and -not $Force) { throw "$destination exists; pass -Force to replace it" }
 $temp = Join-Path ([IO.Path]::GetTempPath()) ([Guid]::NewGuid())

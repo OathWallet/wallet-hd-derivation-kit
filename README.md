@@ -1,14 +1,14 @@
 # Wallet HD Derivation Kit
 
-[![CI](https://github.com/devdasx/wallet-hd-derivation-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/devdasx/wallet-hd-derivation-kit/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/devdasx/wallet-hd-derivation-kit)](https://github.com/devdasx/wallet-hd-derivation-kit/releases)
+[![CI](https://github.com/OathWallet/wallet-hd-derivation-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/OathWallet/wallet-hd-derivation-kit/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/OathWallet/wallet-hd-derivation-kit)](https://github.com/OathWallet/wallet-hd-derivation-kit/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Coverage](https://img.shields.io/badge/coverage-%E2%89%A590%25-brightgreen)](https://github.com/devdasx/wallet-hd-derivation-kit/actions/workflows/ci.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/devdasx/wallet-hd-derivation-kit/badge)](https://securityscorecards.dev/viewer/?uri=github.com/devdasx/wallet-hd-derivation-kit)
+[![Coverage](https://img.shields.io/badge/coverage-%E2%89%A590%25-brightgreen)](https://github.com/OathWallet/wallet-hd-derivation-kit/actions/workflows/ci.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/OathWallet/wallet-hd-derivation-kit/badge)](https://securityscorecards.dev/viewer/?uri=github.com/OathWallet/wallet-hd-derivation-kit)
 [![Security policy](https://img.shields.io/badge/security-policy-green.svg)](SECURITY.md)
 [![Swift Package Index](https://img.shields.io/badge/Swift_Package_Index-compatible-orange)](https://swiftpackageindex.com/devdasx/wallet-hd-derivation-kit)
 [![CocoaPods](https://img.shields.io/cocoapods/v/WalletHDDerivationKit.svg)](https://cocoapods.org/pods/WalletHDDerivationKit)
-[![Homebrew](https://img.shields.io/badge/Homebrew-devdasx%2Fcrypto--kits-orange)](https://github.com/devdasx/homebrew-crypto-kits)
+[![Homebrew](https://img.shields.io/badge/Homebrew-OathWallet%2Fcrypto--kits-orange)](https://github.com/OathWallet/homebrew-crypto-kits)
 [![npm](https://img.shields.io/npm/v/wallet-hd-derivation-kit)](https://www.npmjs.com/package/wallet-hd-derivation-kit)
 [![JSR](https://jsr.io/badges/@devdasx/wallet-hd)](https://jsr.io/@devdasx/wallet-hd)
 [![PyPI](https://img.shields.io/pypi/v/wallet-hd-derivation-kit)](https://pypi.org/project/wallet-hd-derivation-kit/)
@@ -18,7 +18,7 @@
 [![pub.dev](https://img.shields.io/pub/v/wallet_hd_derivation_kit)](https://pub.dev/packages/wallet_hd_derivation_kit)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.devdasx/wallet-hd-derivation-kit)](https://central.sonatype.com/artifact/io.github.devdasx/wallet-hd-derivation-kit)
 [![JitPack](https://jitpack.io/v/devdasx/wallet-hd-derivation-kit.svg)](https://jitpack.io/#devdasx/wallet-hd-derivation-kit/v1.0.0)
-[![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-%40devdasx%2Fwallet--hd--derivation--kit-181717)](https://github.com/devdasx/wallet-hd-derivation-kit/pkgs/npm/wallet-hd-derivation-kit)
+[![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-%40oathwallet%2Fwallet--hd--derivation--kit-181717)](https://github.com/OathWallet/wallet-hd-derivation-kit/pkgs/npm/wallet-hd-derivation-kit)
 
 Production-oriented, offline HD-wallet derivation for Swift, JavaScript, React Native, Python, Rust, Go, Dart/Flutter, Kotlin/JVM/Android, and the `wallethd` CLI. Every implementation is native to its language and checked against the same public vectors.
 
@@ -45,7 +45,7 @@ console.log(result.address); // private material is not in this result
 CLI:
 
 ```sh
-brew install devdasx/crypto-kits/wallethd
+brew install OathWallet/crypto-kits/wallethd
 wallethd address --chain bitcoin --prompt --pretty
 ```
 
@@ -55,20 +55,20 @@ The CLI reads mnemonic/seed material through a hidden prompt, stdin, or a permis
 
 | Platform | Command |
 |---|---|
-| Swift Package Manager | `.package(url: "https://github.com/devdasx/wallet-hd-derivation-kit.git", from: "1.0.0")` |
+| Swift Package Manager | `.package(url: "https://github.com/OathWallet/wallet-hd-derivation-kit.git", from: "1.0.0")` |
 | CocoaPods | `pod 'WalletHDDerivationKit', '~> 1.0'` |
 | npm | `npm install wallet-hd-derivation-kit` |
-| GitHub npm | `npm install @devdasx/wallet-hd-derivation-kit` |
+| GitHub npm | `npm install @oathwallet/wallet-hd-derivation-kit` |
 | JSR | `deno add jsr:@devdasx/wallet-hd` |
 | Python | `python -m pip install wallet-hd-derivation-kit` |
 | Rust | `cargo add wallet-hd-derivation-kit` |
 | Go | `go get github.com/devdasx/wallet-hd-derivation-kit@v1.0.0` |
 | Dart / Flutter | `dart pub add wallet_hd_derivation_kit` / `flutter pub add wallet_hd_derivation_kit` |
 | Kotlin / Android | `implementation("io.github.devdasx:wallet-hd-derivation-kit:1.0.0")` |
-| Homebrew CLI | `brew install devdasx/crypto-kits/wallethd` |
+| Homebrew CLI | `brew install OathWallet/crypto-kits/wallethd` |
 | Cargo CLI | `cargo install wallet-hd-derivation-kit --version 1.0.0 --locked` |
-| Shell installer | `curl -fsSL https://raw.githubusercontent.com/devdasx/wallet-hd-derivation-kit/v1.0.0/install.sh \| sh` |
-| Container | `docker run --rm ghcr.io/devdasx/wallethd:1.0.0 list-chains` |
+| Shell installer | `curl -fsSL https://raw.githubusercontent.com/OathWallet/wallet-hd-derivation-kit/v1.0.0/install.sh \| sh` |
+| Container | `docker run --rm ghcr.io/oathwallet/wallethd:1.0.0 list-chains` |
 
 Swift Package Manager requires Swift tools 6.2 or newer. CocoaPods consumers compile the same Swift sources with the toolchain selected by their application.
 
@@ -140,9 +140,9 @@ Successful data commands emit JSON schema v1 and exit `0`. Any usage, secret-inp
 
 GitHub is the only source repository. Registry packages are immutable builds of signed `vX.Y.Z` tags; registry copies are never edited independently. A merge to `main` redeploys documentation. Release jobs are separately rerunnable and skip versions that already exist.
 
-Repository: <https://github.com/devdasx/wallet-hd-derivation-kit>
+Repository: <https://github.com/OathWallet/wallet-hd-derivation-kit>
 
-Documentation: <https://devdasx.github.io/wallet-hd-derivation-kit/>
+Documentation: <https://oathwallet.github.io/wallet-hd-derivation-kit/>
 
 Changelog: [CHANGELOG.md](CHANGELOG.md)
 

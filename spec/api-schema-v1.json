@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://devdasx.github.io/wallet-hd-derivation-kit/schema/v1.json",
+  "$id": "https://oathwallet.github.io/wallet-hd-derivation-kit/schema/v1.json",
   "title": "Wallet HD Derivation Kit result",
   "oneOf": [
     {"$ref":"#/$defs/address"},

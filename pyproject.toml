@@ -25,10 +25,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://devdasx.github.io/wallet-hd-derivation-kit/"
-Repository = "https://github.com/devdasx/wallet-hd-derivation-kit"
-Documentation = "https://devdasx.github.io/wallet-hd-derivation-kit/python/"
-Issues = "https://github.com/devdasx/wallet-hd-derivation-kit/issues"
+Homepage = "https://oathwallet.github.io/wallet-hd-derivation-kit/"
+Repository = "https://github.com/OathWallet/wallet-hd-derivation-kit"
+Documentation = "https://oathwallet.github.io/wallet-hd-derivation-kit/python/"
+Issues = "https://github.com/OathWallet/wallet-hd-derivation-kit/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["python/wallet_hd_derivation_kit"]

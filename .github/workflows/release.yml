@@ -155,11 +155,11 @@ jobs:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with: { ref: "${{ env.RELEASE_TAG }}" }
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
-        with: { node-version: 24, registry-url: "https://npm.pkg.github.com", scope: "@devdasx" }
-      - run: npm ci && npm pkg set name=@devdasx/wallet-hd-derivation-kit
+        with: { node-version: 24, registry-url: "https://npm.pkg.github.com", scope: "@oathwallet" }
+      - run: npm ci && npm pkg set name=@oathwallet/wallet-hd-derivation-kit
       - id: exists
         env: { NODE_AUTH_TOKEN: "${{ github.token }}" }
-        run: npm view "@devdasx/wallet-hd-derivation-kit@${RELEASE_TAG#v}" version --registry=https://npm.pkg.github.com >/dev/null 2>&1 && echo exists=true >> "$GITHUB_OUTPUT" || true
+        run: npm view "@oathwallet/wallet-hd-derivation-kit@${RELEASE_TAG#v}" version --registry=https://npm.pkg.github.com >/dev/null 2>&1 && echo exists=true >> "$GITHUB_OUTPUT" || true
       - if: steps.exists.outputs.exists != 'true'
         env: { NODE_AUTH_TOKEN: "${{ github.token }}" }
         run: npm publish --access public
@@ -270,7 +270,7 @@ jobs:
       - uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3
         with: { registry: ghcr.io, username: "${{ github.actor }}", password: "${{ github.token }}" }
       - id: exists
-        run: docker buildx imagetools inspect "ghcr.io/devdasx/wallethd:${{ needs.verify.outputs.version }}" >/dev/null 2>&1 && echo exists=true >> "$GITHUB_OUTPUT" || true
+        run: docker buildx imagetools inspect "ghcr.io/oathwallet/wallethd:${{ needs.verify.outputs.version }}" >/dev/null 2>&1 && echo exists=true >> "$GITHUB_OUTPUT" || true
       - if: steps.exists.outputs.exists != 'true'
         uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6
         with:
@@ -280,8 +280,8 @@ jobs:
           provenance: mode=max
           sbom: true
           tags: |
-            ghcr.io/devdasx/wallethd:${{ needs.verify.outputs.version }}
-            ghcr.io/devdasx/wallethd:latest
+            ghcr.io/oathwallet/wallethd:${{ needs.verify.outputs.version }}
+            ghcr.io/oathwallet/wallethd:latest
 
   homebrew:
     needs: [verify, github-release]
@@ -292,10 +292,10 @@ jobs:
         with: { ref: "${{ env.RELEASE_TAG }}" }
       - env: { GH_TOKEN: "${{ secrets.HOMEBREW_TAP_TOKEN }}" }
         run: |
-          git clone "https://x-access-token:${GH_TOKEN}@github.com/devdasx/homebrew-crypto-kits.git" tap
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/OathWallet/homebrew-crypto-kits.git" tap
           cp Formula/wallethd.rb tap/Formula/wallethd.rb
           archive="$(mktemp)"
-          curl -fsSL "https://github.com/devdasx/wallet-hd-derivation-kit/archive/refs/tags/${RELEASE_TAG}.tar.gz" -o "$archive"
+          curl -fsSL "https://github.com/OathWallet/wallet-hd-derivation-kit/archive/refs/tags/${RELEASE_TAG}.tar.gz" -o "$archive"
           sha="$(sha256sum "$archive" | awk '{print $1}')"
           sed -i "/^  url /a\\  sha256 \"$sha\"" tap/Formula/wallethd.rb
           cd tap

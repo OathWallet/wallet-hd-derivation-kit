@@ -11,4 +11,4 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/) and s
 - Safe `wallethd` CLI, installers, Homebrew formula, release binaries, and GHCR image.
 - Shared schema/vectors, seven-runtime differential conformance, examples, fuzzing, benchmarks, audits, security documentation, and release automation.
 
-[1.0.0]: https://github.com/devdasx/wallet-hd-derivation-kit/releases/tag/v1.0.0
+[1.0.0]: https://github.com/OathWallet/wallet-hd-derivation-kit/releases/tag/v1.0.0

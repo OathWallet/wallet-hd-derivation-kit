@@ -17,4 +17,4 @@ val result = deriveAddress(source, DeriveOptions(chain = "ethereum"))
 println(result.address)
 ```
 
-JVM 11+ is supported. The artifact is also addressable through JitPack as `com.github.devdasx:wallet-hd-derivation-kit:v1.0.0`. [Runnable example](https://github.com/devdasx/wallet-hd-derivation-kit/tree/main/examples/kotlin).
+JVM 11+ is supported. The artifact is also addressable through JitPack as `com.github.devdasx:wallet-hd-derivation-kit:v1.0.0`. [Runnable example](https://github.com/OathWallet/wallet-hd-derivation-kit/tree/main/examples/kotlin).

@@ -18,4 +18,4 @@ console.log(deriveAddress({ source, chain: "ethereum" }).address);
 console.log(deriveAccountPublicKey({ source, chain: "bitcoin" }).extendedPublicKey);
 ```
 
-The package is pure ESM for Node 20+, bundlers, Deno through JSR, and browsers with a deliberate local secret boundary. It has no network client. [Runnable example](https://github.com/devdasx/wallet-hd-derivation-kit/tree/main/examples/javascript).
+The package is pure ESM for Node 20+, bundlers, Deno through JSR, and browsers with a deliberate local secret boundary. It has no network client. [Runnable example](https://github.com/OathWallet/wallet-hd-derivation-kit/tree/main/examples/javascript).

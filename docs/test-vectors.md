@@ -7,7 +7,7 @@ permalink: /test-vectors/
 
 # Public test vectors
 
-The versioned [`test-vectors`](https://github.com/devdasx/wallet-hd-derivation-kit/tree/main/test-vectors) directory is the machine-readable v1 collection. It contains only published, permanently compromised test material:
+The versioned [`test-vectors`](https://github.com/OathWallet/wallet-hd-derivation-kit/tree/main/test-vectors) directory is the machine-readable v1 collection. It contains only published, permanently compromised test material:
 
 - `bip32-official.json`: every valid BIP-32 vector 1–4, both leading-zero cases, and every invalid extended key from vector 5.
 - `slip10-ed25519-official.json`: the complete first Ed25519 SLIP-0010 derivation chain.

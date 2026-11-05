@@ -19,4 +19,4 @@ final result = deriveAddress(
 print(result['address']);
 ```
 
-The library is pure Dart and shares the same public API with the Flutter package. [Runnable example](https://github.com/devdasx/wallet-hd-derivation-kit/tree/main/examples/dart).
+The library is pure Dart and shares the same public API with the Flutter package. [Runnable example](https://github.com/OathWallet/wallet-hd-derivation-kit/tree/main/examples/dart).

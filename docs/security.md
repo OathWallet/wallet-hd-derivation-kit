@@ -11,4 +11,4 @@ The runtime is offline-only, normal APIs omit private material, public vectors a
 
 The package is not a key vault, signer, transaction validator, backup system, hardware-wallet boundary, or substitute for an independent audit. The project **has not yet been independently audited**.
 
-Read [SECURITY.md](https://github.com/devdasx/wallet-hd-derivation-kit/blob/main/SECURITY.md), the [threat model](../threat-model/), [private-material guide](https://github.com/devdasx/wallet-hd-derivation-kit/blob/main/PRIVATE_MATERIAL.md), and [audit checklist](https://github.com/devdasx/wallet-hd-derivation-kit/blob/main/AUDIT_CHECKLIST.md).
+Read [SECURITY.md](https://github.com/OathWallet/wallet-hd-derivation-kit/blob/main/SECURITY.md), the [threat model](../threat-model/), [private-material guide](https://github.com/OathWallet/wallet-hd-derivation-kit/blob/main/PRIVATE_MATERIAL.md), and [audit checklist](https://github.com/OathWallet/wallet-hd-derivation-kit/blob/main/AUDIT_CHECKLIST.md).

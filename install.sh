@@ -7,7 +7,7 @@ FORCE=0
 DRY_RUN=0
 UNINSTALL=0
 VERIFY=1
-REPOSITORY="https://github.com/devdasx/wallet-hd-derivation-kit"
+REPOSITORY="https://github.com/OathWallet/wallet-hd-derivation-kit"
 
 usage() {
   printf '%s\n' "Usage: install.sh [--version VERSION] [--prefix PATH] [--force] [--dry-run] [--no-verify] [--uninstall]"

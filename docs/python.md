@@ -19,4 +19,4 @@ result = derive_address({"mnemonic": os.environ["WALLET_MNEMONIC"]}, chain="tron
 print(result["address"])
 ```
 
-Python 3.10+ is supported. Pin `1.0.*` for compatible fixes and verify your lockfile. [Runnable example](https://github.com/devdasx/wallet-hd-derivation-kit/tree/main/examples/python).
+Python 3.10+ is supported. Pin `1.0.*` for compatible fixes and verify your lockfile. [Runnable example](https://github.com/OathWallet/wallet-hd-derivation-kit/tree/main/examples/python).

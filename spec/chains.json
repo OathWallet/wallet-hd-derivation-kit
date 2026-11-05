@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "schemaVersion": 1,
-  "canonicalRepository": "https://github.com/devdasx/wallet-hd-derivation-kit",
+  "canonicalRepository": "https://github.com/OathWallet/wallet-hd-derivation-kit",
   "chains": [
     {"id":"bitcoin","name":"Bitcoin","symbol":"BTC","coinType":0,"curve":"secp256k1","defaultPath":"m/84'/0'/0'/0/0","defaultScriptType":"p2wpkh","extendedKeyFormats":["xpub","ypub","zpub"]},
     {"id":"bitcoin-testnet","name":"Bitcoin Testnet","symbol":"TBTC","coinType":1,"curve":"secp256k1","defaultPath":"m/84'/1'/0'/0/0","defaultScriptType":"p2wpkh","extendedKeyFormats":["tpub","upub","vpub"]},
